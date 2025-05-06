@@ -3,6 +3,17 @@
   src: url("../fonts/Figtree-VariableFont_wght.ttf");
 }
 
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   font-family: Figtree, sans-serif;
   background-color: #F4D04E;
