@@ -8,6 +8,15 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 html {
@@ -17,39 +26,86 @@ html {
 body {
   font-family: Figtree, sans-serif;
   background-color: #F4D04E;
+  margin: 0;
 }
 
-.card {
-  background-color: white;
+h1, p {
+  padding-top: 12px;
+}
+
+h1, h2, p, span {
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #111111;
 }
 
 h1 {
   font-size: 1.5rem;
   font-weight: 800;
-  line-height: 150%;
-  letter-spacing: 0;
-  color: #111111;
-}
-
-p {
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 150%;
-  letter-spacing: 0;
-  color: #6B6B6B;
 }
 
 h2 {
   font-size: 0.875rem;
-  line-height: 150%;
-  letter-spacing: 0;
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #111111;
+  box-shadow: 8px 8px 0px #000000;
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 384px;
+}
+
+.card-img {
+  border-radius: 10px;
+}
+
+.card-type-container {
+  background-color: #F4D04E;
+  width: fit-content;
+  border-radius: 4px;
+}
+
+.card-type-content {
+  padding: 4px 12px;
+}
+
+.card-date {
+  font-size: 0.875rem;
+  font-weight: 500;
   color: #111111;
 }
 
-span {
-  font-size: 0.875rem;
+.card-description {
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 150%;
-  letter-spacing: 0;
-  color: #111111;
+  color: #6B6B6B;
 }
+
+.card-content {
+  margin-top: 24px;
+}
+
+
+
+.card-author {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+
+  img {
+    width: 32px;
+    height: 32px;
+  }
+}
+

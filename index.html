@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Blog Preview Card</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="description" content="">
 
@@ -14,8 +14,7 @@
   <meta property="og:image" content="">
   <meta property="og:image:alt" content="">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32x32.png" sizes="any">
   <link rel="apple-touch-icon" href="icon.png">
 
   <link rel="manifest" href="site.webmanifest">
@@ -26,19 +25,21 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <div>
+  <div class="container">
     <!-- Card -->
     <div class="card">
-      <img src="./img/illustration-article.svg" alt="Illustration Image">
-      <div>
-        <h2>Learning</h2>
+      <img class="card-img" src="./img/illustration-article.svg" alt="Illustration Image">
+      <div class="card-content">
+        <div class="card-type-container">
+          <h2 class="card-type-content">Learning</h2>
+        </div>
+        <p class="card-date">Published <time datetime="2023-12-21">21 Dec 2023</time></p>
+        <h1>HTML & CSS foundations</h1>
+        <p class="card-description">These languages are the backbone of every website, defining structure, content, and presentation.</p>
       </div>
-      <span>Published 21 Dec 2023</span>
-      <h1>HTML & CSS foundations</h1>
-      <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
 
-      <div>
-        <img src="./img/image-avatar.webp" alt="Avatar Image">
+      <div class="card-author">
+        <img class="card-author-img" src="./img/image-avatar.webp" alt="Avatar Image">
         <h2>Greg Hooper</h2>
       </div>
     </div>
