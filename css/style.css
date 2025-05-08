@@ -39,24 +39,14 @@ h1, h2, p, span {
   color: #111111;
 }
 
-h1 {
-  font-size: 1.5rem;
-  font-weight: 800;
-}
-
-h2 {
-  font-size: 0.875rem;
-  font-weight: 500;
-}
-
-.container {
+.page-layout {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
 
-.card {
+.article-card {
   background-color: white;
   border: 1px solid #111111;
   box-shadow: 8px 8px 0px #000000;
@@ -68,20 +58,25 @@ h2 {
   }
 }
 
-.card-img {
+.article-card__thumbnail {
   border-radius: 10px;
   width: auto;
   height: auto;
   object-fit: cover;
 }
 
-.card-type-container {
+.article-card__content {
+  margin-top: 1.5rem;
+}
+
+.article-card__tag {
   background-color: #F4D04E;
   width: fit-content;
   border-radius: 4px;
 }
 
-.card-type-content {
+.article-card__tag-label {
+  display: block;
   font-size: 0.75rem;
   padding: 4px 12px;
   font-weight: 800;
@@ -90,7 +85,7 @@ h2 {
   }
 }
 
-.card-date {
+.article-card__meta {
   font-size: 0.75rem;
   font-weight: 500;
   color: #111111;
@@ -99,7 +94,7 @@ h2 {
   }
 }
 
-.card-title {
+.article-card__title {
   font-size: 1.25rem;
   font-weight: 800;
   @media (min-width: 1028px) {
@@ -107,11 +102,11 @@ h2 {
   }
 }
 
-.card-title:hover {
+.article-card__title:hover {
   color: #F4D04E;
 }
 
-.card-description {
+.article-card__description {
   font-size: 0.875rem;
   font-weight: 500;
   color: #6B6B6B;
@@ -120,18 +115,20 @@ h2 {
   }
 }
 
-.card-content {
-  margin-top: 1.5rem;
-}
-
-.card-author {
+.article-card__footer {
   margin-top: 24px;
   display: flex;
   align-items: center;
   column-gap: 12px;
-  img {
-    width: 32px;
-    height: 32px;
-  }
 }
 
+.article-card__footer img {
+  width: 32px;
+  height: 32px;
+}
+
+.article-card__author-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #111111;
+}
